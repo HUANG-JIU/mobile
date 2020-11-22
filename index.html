@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--
+    Author:
+    Version:
+    Last modified time：
+    Remarks:
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>学生体温信息填报</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <meta name="viewport" content="width=device-width ">
+    <link rel="icon" href="image/icon.jpg">
+    <link rel="stylesheet" href="css/index_mobile.css" media="">
+    <link rel="stylesheet" href="css/index_desktop.css" media="(min-width=500px)">
+    <meta name="kewords" content=""/>
+    <meta name="description" content=""/>
+</head>
+<body>
+<header>
+    <div class="header_position">
+        <img src="image/download-1副本.jpg" class="header_img">
+    </div>
+</header>
+<section>
+    <header>
+        <div class="article_text">
+            <p>学生体温信息填报</p>
+        </div>
+        <hr/>
+    </header>
+    <article>
+        <form action="" method="get">
+            <div class="form_div" title="name">
+                <label for="name">请输入你的姓名:<span class="span">(必填)</span></label><br/>
+                <input type="text" name="name" id="name" placeholder="请输入你的姓名" required class="input_border">
+            </div>
+            <div class="form_div" title="studentID">
+                <label for="studentID">请输入你的学号:<span class="span">(必填)</span></label><br/>
+                <input type="text" name="studentID" id="studentID" class="input_border" title="姓名" minlength="9" maxlength="9" placeholder="请输入你的9位数学号" required>
+            </div>
+            <div class="form_div" title="health">
+                <div>你的健康状态<span class="span">(必填)</span></div>
+                <div class="div_radio">
+                    <input type="radio" name="health" value="健康" id="healthy" class="radio">
+                    <label for="healthy">健康</label>
+                </div>
+                <div class="div_radio">
+                    <input type="radio" name="health" value="疑似病例" id="suspected">
+                    <label for="suspected">疑似病例</label>
+                </div>
+                <div class="div_radio">
+                    <input type="radio" name="health" value="确诊病例" id="confirmed">
+                    <label for="confirmed">确诊病例</label>
+
+                </div>
+            </div>
+            <div class="form_div" title="symptom">
+                <div>你是否有发热、感冒、咳嗽、呼吸困难等症状<span class="span">(必填)</span></div>
+                <div class="div_radio">
+                    <input type="radio" name="symptom" id="yes" value="是">
+                    <label for="yes">是</label>
+                </div>
+                <div class="div_radio">
+                    <input type="radio" name="symptom" id="no" value="否">
+                    <label for="no">否</label>
+                </div>
+            </div>
+            <div class="form_div" title="temperature">
+                <label for="temperature">请输入你的体温: <span class="span">(必填)</span></label>
+                <input type="text" name="temperature" id="temperature" class="input_border" placeholder="请输入你的体温" required>
+            </div>
+            <div align="center">
+                <input type="submit" name="push" value="确认提交" class="submit">
+            </div>
+        </form>
+    </article>
+</section>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
